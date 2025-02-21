@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #070323, #0e1350);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .login-container {
+            background-color: #111827;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 45px 15px 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: #1f2937;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .input-group input::placeholder {
+            color: #9ca3af;
+            opacity: 0.8;
+        }
+
+        .input-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            font-size: 18px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #181c69;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .login-btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-3px);
+        }
+
+        .login-btn:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px 20px;
+            }
+        }
+        .Back {
+            color:blue;
+            text-decoration: underline;
+            position: absolute;
+            top: 20px;
+            left:20px;
+            font-size:18px;
+            font-weight: bold;
+            transition: color 0.3s;
+
+        }
+        .Back:hover {
+            color:#3b1dff
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Profile Login</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Username">
+            <i>👤</i>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password">
+            <i>🔒</i>
+        </div>
+        <button class="login-btn">Login</button>
+    </div>
+    <a href="index.html" class="Back">Back</a>
+    <script src="jsfor4.js"></script>
+</body>
+</html>
+

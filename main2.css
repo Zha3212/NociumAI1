@@ -1,0 +1,7 @@
+body {
+    background:#1c0b47;
+}
+.inputs {
+    place-items: centre;
+    flex-direction: column;
+}
